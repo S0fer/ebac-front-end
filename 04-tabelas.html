@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Tabelas</title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="index.js"></script>
+	</head>
+	<body>
+
+		<main-header></main-header>
+
+		<section>
+
+			<article>
+
+				
+				<table>
+                    <tr>
+                        <td>Year: 2022</td>
+                        <td colspan="2">Q1</td>
+                        <td colspan="2">Q2</td>
+                        <td colspan="2">Q3</td>
+                        <td colspan="2">Q4</td>
+                    </tr>
+                    <tr>
+                        <td>Products</td>
+                        <td>Actual</td>
+                        <td>Target</td>
+                        <td>Actual</td>
+                        <td>Target</td>
+                        <td>Actual</td>
+                        <td>Target</td>
+                        <td>Actual</td>
+                        <td>Target</td>
+                    </tr>
+                    <tr>
+                        <td>Product A</td>
+                        <td class="a">650</td>
+                        <td class="a">800</td>
+                        <td class="a">800</td>
+                        <td class="a">1000</td>
+                        <td class="a">950</td>
+                        <td class="a">1200</td>
+                        <td class="a">1200</td>
+                        <td class="a">1500</td>
+                    </tr>
+                    <tr>
+                        <td>Product B</td>
+                        <td class="b">650</td>
+                        <td class="b">800</td>
+                        <td class="b">800</td>
+                        <td class="b">1000</td>
+                        <td class="b">950</td>
+                        <td class="b">1200</td>
+                        <td class="b">1200</td>
+                        <td class="b">1500</td>
+                    </tr>
+                    <tr>
+                        <td>Product C</td>
+                        <td class="c">650</td>
+                        <td class="c">800</td>
+                        <td class="c">800</td>
+                        <td class="c">1000</td>
+                        <td class="c">950</td>
+                        <td class="c">1200</td>
+                        <td class="c">1200</td>
+                        <td class="c">1500</td>
+                    </tr>
+                    <tr>
+                        <td>Total Products<br>Sold</td>
+                        <td class="total">N</td>
+                        <td class="total">N</td>
+                        <td class="total">N</td>
+                        <td class="total">N</td>
+                        <td class="total">N</td>
+                        <td class="total">N</td>
+                        <td class="total">N</td>
+                        <td class="total">N</td>
+                    </tr>
+            </table>
+				
+
+			</article>
+
+
+		</section>
+
+		<main-footer></main-footer>
+		<script>
+            let a = document.getElementsByClassName("a")
+            let b = document.getElementsByClassName("b")
+            let c = document.getElementsByClassName("c")
+            let total = document.getElementsByClassName("total")
+            for(i = 0; i < total.length; i++){
+                total[i].innerHTML = parseInt(a[i].innerHTML) + parseInt(b[i].innerHTML) + parseInt(c[i].innerHTML)
+            }
+        </script>
+		
+	</body>
+</html>

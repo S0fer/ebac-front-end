@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Contato</title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="index.js"></script>
+	</head>
+	<body>
+
+		<main-header></main-header>
+
+		<section>
+
+			<article>
+
+				<h1>Contato</h1>
+				<p>Venha tomar um café comigo!</p>
+
+				<form method="post">
+
+					<div>
+						<label for="nome">Nome</label><br>
+						<input type="text" name="nome" id="nome" placeholder="Como devo te chamar">
+					</div>
+
+					<div>
+						<label for="email">E-mail</label><br>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div>
+						<label for="mensagem">Por que devo lhe convidar para um café?</label><br>
+						<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+					</div>
+
+					<div>
+						<p>
+							<label>Açúcar no café?</label>
+							<input type="radio" name="linguagens" value="html" class="nofancy"> Sim, por favor
+							<input type="radio" name="linguagens" value="css" class="nofancy"> Não, obrigado
+							<input type="radio" name="linguagens" value="javascript" class="nofancy"> Quem coloca açúcar no café?
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>Você ao menos gosta de café?</label>
+							<input type="checkbox" name="linguagens" value="html" required class="nofancy"> Quem
+							<input type="checkbox" name="linguagens" value="css" required class="nofancy"> não
+							<input type="checkbox" name="linguagens" value="javascript" required class="nofancy"> gosta?
+						</p>
+					</div>
+
+					<div>
+						<label>Escolha a cor de sua xícara</label>
+						<select>
+							<option value="Azul">Azul</option>
+							<option value="Verde">Verde</option>
+							<option value="Vermelho" selected>Vermelho</option>
+						</select>
+					</div>
+
+					<div>
+						<input type="submit" >
+					</div>
+					
+
+				</form>
+
+				
+				
+			</article>
+
+
+		</section>
+
+		<main-footer></main-footer>
+		
+	</body>
+</html>
